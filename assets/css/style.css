@@ -1,1 +1,471 @@
-/*# sourceMappingURL=style.css.map */
+/*===========================
+     01.COMMON CSS 
+===========================*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Poller+One&family=Red+Rose:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --white-color: rgba(255, 255, 255, 1);
+  --font-red-rose: "Red Rose", serif;
+  --font-kanit: "Kanit", sans-serif;
+  --font-poller-one: "Poller One", serif;
+  --primary-color: #78EB54;
+  --text-color: #191919;
+  --text-color2: #545454;
+}
+
+/*================================================
+  02. Mixins Css
+  =================================================*/
+/*================================================
+  03. Global Css
+  =================================================*/
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+i.bx {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: var(--font-kanit);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pt-120 {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .pt-120 {
+    padding-top: 90px;
+  }
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pb-120 {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .pb-120 {
+    padding-bottom: 90px;
+  }
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+@media (max-width: 991px) {
+  .pt-100 {
+    padding-top: 80px;
+  }
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+@media (max-width: 991px) {
+  .pt-90 {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .pt-90 {
+    padding-top: 70px;
+  }
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+@media (max-width: 991px) {
+  .pb-90 {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .pb-90 {
+    padding-bottom: 70px;
+  }
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pb-80 {
+    padding-bottom: 60px;
+  }
+}
+
+.pb-65 {
+  padding-bottom: 65px;
+}
+
+.mt-120 {
+  margin-top: 120px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mt-120 {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .mt-120 {
+    margin-top: 90px;
+  }
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .mb-100 {
+    margin-bottom: 80px;
+  }
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+@media (max-width: 991px) {
+  .mt-100 {
+    margin-top: 80px !important;
+  }
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+@media (max-width: 991px) {
+  .mb-90 {
+    margin-bottom: 70px;
+  }
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-35 {
+  padding-top: 35px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pe-80 {
+  padding-right: 80px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pl-110 {
+  padding-left: 110px;
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  .pl-110 {
+    padding-left: 70px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .pl-110 {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .pl-110 {
+    padding-left: unset;
+  }
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .mb-60 {
+    margin-bottom: 40px;
+  }
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .mb-70 {
+    margin-bottom: 40px;
+  }
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-44 {
+  margin-bottom: 44px;
+}
+@media (max-width: 991px) {
+  .mb-44 {
+    margin-bottom: 0px;
+  }
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+@media (max-width: 767px) {
+  .mt-60 {
+    margin-top: 40px;
+  }
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+@media (max-width: 767px) {
+  .mt-70 {
+    margin-top: 40px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*================================================
+  03. Header area
+  =================================================*/
+.header-area {
+  padding: 14px 0 20px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.header-area .header-menu-icon {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header-area .header-menu-icon .menu-icon {
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  padding: 8px 12px 10px;
+  text-align: center;
+}
+.header-area .header-menu-icon .menu-icon svg {
+  fill: var(--text-color);
+  align-items: center;
+  transition: 0.35s;
+}
+.header-area .header-menu-icon .menu-icon:hover svg {
+  fill: var(--primary-color);
+}
+.header-area .header-menu-icon .right-icon svg {
+  fill: var(--text-color);
+  transition: 0.35s;
+}
+.header-area .header-menu-icon .right-icon:hover svg {
+  fill: var(--primary-color);
+}
+.header-area .header-logo a {
+  font-family: var(--font-poller-one);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-color);
+}
+.header-area .header-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header-area .header-right .search-btn .icon svg {
+  fill: var(--text-color);
+  transition: 0.35s;
+}
+.header-area .header-right .search-btn .icon:hover svg {
+  fill: var(--primary-color);
+}
+.header-area .header-right .SUBSCRIBE-btn a {
+  font-family: var(--font-red-rose);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 12px 25px;
+  border-radius: 100px;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.35s;
+}
+.header-area .header-right .SUBSCRIBE-btn a svg path {
+  stroke: var(--text-color);
+  transition: 0.35s;
+}
+.header-area .header-right .SUBSCRIBE-btn a .arrow {
+  transform: rotate(0);
+  transition: 0.5s;
+}
+.header-area .header-right .SUBSCRIBE-btn a:hover {
+  background: var(--text-color);
+  color: var(--white-color);
+}
+.header-area .header-right .SUBSCRIBE-btn a:hover svg path {
+  stroke: var(--white-color);
+}
+
+.header-menu {
+  display: flex;
+  padding: 15px;
+}
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.header-menu ul li a {
+  font-family: var(--font-red-rose);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text-color);
+  transition: 0.35s;
+}
+.header-menu ul li a svg {
+  fill: var(--text-color);
+  transition: 0.35s;
+}
+.header-menu ul li a:hover {
+  color: var(--primary-color);
+}
+.header-menu ul li a:hover svg {
+  fill: var(--primary-color);
+}/*# sourceMappingURL=style.css.map */
