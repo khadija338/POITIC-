@@ -2,6 +2,7 @@
      01.COMMON CSS 
 ===========================*/
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Poller+One&family=Red+Rose:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ojuju:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -540,7 +541,7 @@ ul {
             }
         }
 
-        .SUBSCRIBE-btn {
+        .subscribe-btn {
             a {
                 font-family: var(--font-red-rose);
                 font-size: 14px;
@@ -550,7 +551,7 @@ ul {
                 text-align: left;
                 background: var(--primary-color);
                 color: var(--text-color);
-                padding: 12px 25px;
+                padding: 15px 27px;
                 border-radius: 100px;
                 transition: 0.35s;
                 display: flex;
@@ -587,35 +588,218 @@ ul {
 
 .header-menu {
     display: flex;
-    padding: 15px;
+    padding: 15px 0 17px;
+    border-bottom: 1px solid #E1E1E1;
 
-    ul {
-        display: flex;
-        align-items: center;
-        gap: 45px;
+    .main-menu {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 45px;
 
-        li {
-            a {
-                font-family: var(--font-red-rose);
-                font-size: 15px;
-                font-weight: 700;
-                line-height: 19px;
-                letter-spacing: 0em;
-                text-align: left;
-                color: var(--text-color);
-                transition: 0.35s;
-                svg{
-                    fill: var(--text-color);
+            li {
+                a {
+                    font-family: var(--font-red-rose);
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--text-color);
                     transition: 0.35s;
-                }
-                &:hover{
-                    color: var(--primary-color);
-                    svg{
-                        fill: var(--primary-color);
-                    }
-                }
 
+                    svg {
+                        fill: var(--text-color);
+                        transition: 0.35s;
+                    }
+
+                    &:hover {
+                        color: var(--primary-color);
+
+                        svg {
+                            fill: var(--primary-color);
+                        }
+                    }
+
+                }
             }
         }
     }
+
+    .social-media {
+        ul {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+
+            li {
+                a {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    border: 1px solid #E1E1E1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: var(--white-color);
+                    color: var(--white-color);
+                    transition: 0.5s;
+
+                    svg {
+                        fill: var(--text-color);
+                    }
+
+                    &:hover {
+                        background: var(--primary-color);
+                        border: 1px solid var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+  04. Banner  area
+  =================================================*/
+.banner-area {
+    border-bottom: 1px solid #E1E1E1;
+    .banner-card {
+        position: relative;
+
+        .banner-img {
+            position: absolute;
+            width: 100%;
+            background-image: url(../image/Image\ \(25\).png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &.two {
+                background-image: url(../image/Image\ \(26\).png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
+            &.three {
+                background-image: url(../image/Image\ \(27\).png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+            padding: 40px 0 10px 30px;
+            @include md-down-device() {
+                padding: 40px 0 40px 30px;
+              }
+            @include sm-down-device() {
+                padding: 40px 0 40px 30px;
+              }
+           
+            .top-btn {
+                a {
+                    font-family: var(--font-red-rose);
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: var(--white-color);
+                    background: var(--text-color2 ) ;
+                    padding: 8px 20px;
+                    border-radius: 100px;
+                }
+            }
+            .banner-content-bottom {
+                padding-top: 310px;
+                margin-bottom: 20px;
+                @include xxl-down-device() {
+                    padding-top: 210px;
+                  }
+                @include xl-down-device() {
+                    padding-top: 118px;
+                  }
+                @include md-down-device() {
+                    padding-top: 50px;
+                  }
+                @include sm-down-device() {
+                    padding-top: 180px;
+                  }
+
+                .author-area {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    .author-name {
+                        a {
+                            font-family: var(--font-red-rose);
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: var(--white-color);
+                        }
+                    }
+
+                    .publish-date {
+
+                        a {
+                            font-family: "Figtree", sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            color: var(--white-color);
+                            align-items: center;
+                            display: flex;
+                            gap: 10px;
+
+                        }
+                    }
+                    @include md-down-device() {
+                        display: block;
+                      }
+                    @include sm-down-device() {
+                        display: flex;
+                      }
+                }
+
+                h2 {
+                    font-family: var(--font-red-rose);
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--white-color);
+                    max-width: 380px;
+                    @include xxl-down-device() {
+                        font-size: 25px;
+                      }
+                    @include xl-down-device() {
+                        font-size: 20px;
+                        line-height: 30px;
+                      }
+                    @include md-down-device() {
+                        font-size: 20px;
+                      }
+                    @include sm-down-device() {
+                        font-size: 30px;
+                      }
+
+                }
+            }
+        }
+    }
+
 }

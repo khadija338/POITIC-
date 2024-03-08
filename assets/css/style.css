@@ -2,6 +2,7 @@
      01.COMMON CSS 
 ===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Poller+One&family=Red+Rose:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ojuju:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -407,7 +408,7 @@ ul {
 .header-area .header-right .search-btn .icon:hover svg {
   fill: var(--primary-color);
 }
-.header-area .header-right .SUBSCRIBE-btn a {
+.header-area .header-right .subscribe-btn a {
   font-family: var(--font-red-rose);
   font-size: 14px;
   font-weight: 700;
@@ -416,7 +417,7 @@ ul {
   text-align: left;
   background: var(--primary-color);
   color: var(--text-color);
-  padding: 12px 25px;
+  padding: 15px 27px;
   border-radius: 100px;
   transition: 0.35s;
   display: flex;
@@ -424,32 +425,33 @@ ul {
   gap: 5px;
   transition: 0.35s;
 }
-.header-area .header-right .SUBSCRIBE-btn a svg path {
+.header-area .header-right .subscribe-btn a svg path {
   stroke: var(--text-color);
   transition: 0.35s;
 }
-.header-area .header-right .SUBSCRIBE-btn a .arrow {
+.header-area .header-right .subscribe-btn a .arrow {
   transform: rotate(0);
   transition: 0.5s;
 }
-.header-area .header-right .SUBSCRIBE-btn a:hover {
+.header-area .header-right .subscribe-btn a:hover {
   background: var(--text-color);
   color: var(--white-color);
 }
-.header-area .header-right .SUBSCRIBE-btn a:hover svg path {
+.header-area .header-right .subscribe-btn a:hover svg path {
   stroke: var(--white-color);
 }
 
 .header-menu {
   display: flex;
-  padding: 15px;
+  padding: 15px 0 17px;
+  border-bottom: 1px solid #E1E1E1;
 }
-.header-menu ul {
+.header-menu .main-menu ul {
   display: flex;
   align-items: center;
   gap: 45px;
 }
-.header-menu ul li a {
+.header-menu .main-menu ul li a {
   font-family: var(--font-red-rose);
   font-size: 15px;
   font-weight: 700;
@@ -459,13 +461,188 @@ ul {
   color: var(--text-color);
   transition: 0.35s;
 }
-.header-menu ul li a svg {
+.header-menu .main-menu ul li a svg {
   fill: var(--text-color);
   transition: 0.35s;
 }
-.header-menu ul li a:hover {
+.header-menu .main-menu ul li a:hover {
   color: var(--primary-color);
 }
-.header-menu ul li a:hover svg {
+.header-menu .main-menu ul li a:hover svg {
   fill: var(--primary-color);
+}
+.header-menu .social-media ul {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.header-menu .social-media ul li a {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #E1E1E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white-color);
+  color: var(--white-color);
+  transition: 0.5s;
+}
+.header-menu .social-media ul li a svg {
+  fill: var(--text-color);
+}
+.header-menu .social-media ul li a:hover {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/*================================================
+  04. Banner  area
+  =================================================*/
+.banner-area {
+  border-bottom: 1px solid #E1E1E1;
+}
+.banner-area .banner-card {
+  position: relative;
+}
+.banner-area .banner-card .banner-img {
+  position: absolute;
+  width: 100%;
+  background-image: url(../image/Image\ \(25\).png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-area .banner-card .banner-img.two {
+  background-image: url(../image/Image\ \(26\).png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.banner-area .banner-card .banner-img.three {
+  background-image: url(../image/Image\ \(27\).png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.banner-area .banner-card .banner-content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0 10px 30px;
+}
+@media (max-width: 767px) {
+  .banner-area .banner-card .banner-content {
+    padding: 40px 0 40px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .banner-area .banner-card .banner-content {
+    padding: 40px 0 40px 30px;
+  }
+}
+.banner-area .banner-card .banner-content .top-btn a {
+  font-family: var(--font-red-rose);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--white-color);
+  background: var(--text-color2);
+  padding: 8px 20px;
+  border-radius: 100px;
+}
+.banner-area .banner-card .banner-content .banner-content-bottom {
+  padding-top: 310px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1399px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom {
+    padding-top: 210px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom {
+    padding-top: 118px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom {
+    padding-top: 180px;
+  }
+}
+.banner-area .banner-card .banner-content .banner-content-bottom .author-area {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.banner-area .banner-card .banner-content .banner-content-bottom .author-area .author-name a {
+  font-family: var(--font-red-rose);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white-color);
+}
+.banner-area .banner-card .banner-content .banner-content-bottom .author-area .publish-date a {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--white-color);
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom .author-area {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom .author-area {
+    display: flex;
+  }
+}
+.banner-area .banner-card .banner-content .banner-content-bottom h2 {
+  font-family: var(--font-red-rose);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white-color);
+  max-width: 380px;
+}
+@media (max-width: 1399px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
