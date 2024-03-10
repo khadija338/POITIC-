@@ -418,37 +418,37 @@ ul {
 /*================================================
   03. Header area
   =================================================*/
-.header-area {
+.header-area2 {
   padding: 14px 0 20px;
   border-bottom: 1px solid #EEEEEE;
 }
-.header-area .header-menu-icon {
+.header-area2 .header-menu-icon {
   display: flex;
   gap: 40px;
   align-items: center;
 }
-.header-area .header-menu-icon .menu-icon {
+.header-area2 .header-menu-icon .menu-icon {
   border: 1px solid #E1E1E1;
   border-radius: 5px;
   padding: 8px 12px 10px;
   text-align: center;
 }
-.header-area .header-menu-icon .menu-icon svg {
+.header-area2 .header-menu-icon .menu-icon svg {
   fill: var(--text-color);
   align-items: center;
   transition: 0.35s;
 }
-.header-area .header-menu-icon .menu-icon:hover svg {
+.header-area2 .header-menu-icon .menu-icon:hover svg {
   fill: var(--primary-color);
 }
-.header-area .header-menu-icon .right-icon svg {
+.header-area2 .header-menu-icon .right-icon svg {
   fill: var(--text-color);
   transition: 0.35s;
 }
-.header-area .header-menu-icon .right-icon:hover svg {
+.header-area2 .header-menu-icon .right-icon:hover svg {
   fill: var(--primary-color);
 }
-.header-area .header-logo a {
+.header-area2 .header-logo a {
   font-family: var(--font-poller-one);
   font-size: 30px;
   font-weight: 400;
@@ -457,19 +457,19 @@ ul {
   text-align: center;
   color: var(--text-color);
 }
-.header-area .header-right {
+.header-area2 .header-right {
   display: flex;
   gap: 40px;
   align-items: center;
 }
-.header-area .header-right .search-btn .icon svg {
+.header-area2 .header-right .search-btn .icon svg {
   fill: var(--text-color);
   transition: 0.35s;
 }
-.header-area .header-right .search-btn .icon:hover svg {
+.header-area2 .header-right .search-btn .icon:hover svg {
   fill: var(--primary-color);
 }
-.header-area .header-right .subscribe-btn a {
+.header-area2 .header-right .subscribe-btn a {
   font-family: var(--font-red-rose);
   font-size: 14px;
   font-weight: 700;
@@ -485,34 +485,34 @@ ul {
   gap: 5px;
   transition: 0.7s;
 }
-.header-area .header-right .subscribe-btn a svg path {
+.header-area2 .header-right .subscribe-btn a svg path {
   stroke: var(--text-color);
 }
-.header-area .header-right .subscribe-btn a .arrow {
+.header-area2 .header-right .subscribe-btn a .arrow {
   transform: rotate(0);
   transition: 0.7s;
 }
-.header-area .header-right .subscribe-btn a:hover {
+.header-area2 .header-right .subscribe-btn a:hover {
   color: var(--white-color);
 }
-.header-area .header-right .subscribe-btn a:hover svg path {
+.header-area2 .header-right .subscribe-btn a:hover svg path {
   stroke: var(--white-color);
 }
-.header-area .header-right .subscribe-btn a:hover .arrow {
+.header-area2 .header-right .subscribe-btn a:hover .arrow {
   transform: rotate(45deg);
 }
 
-.header-menu {
+.header-menu2 {
   display: flex;
   padding: 15px 0 17px;
   border-bottom: 1px solid #E1E1E1;
 }
-.header-menu .main-menu ul {
+.header-menu2 .main-menu ul {
   display: flex;
   align-items: center;
   gap: 45px;
 }
-.header-menu .main-menu ul li a {
+.header-menu2 .main-menu ul li a {
   font-family: var(--font-red-rose);
   font-size: 15px;
   font-weight: 700;
@@ -522,22 +522,22 @@ ul {
   color: var(--text-color);
   transition: 0.35s;
 }
-.header-menu .main-menu ul li a svg {
+.header-menu2 .main-menu ul li a svg {
   fill: var(--text-color);
   transition: 0.35s;
 }
-.header-menu .main-menu ul li a:hover {
+.header-menu2 .main-menu ul li a:hover {
   color: var(--primary-color);
 }
-.header-menu .main-menu ul li a:hover svg {
+.header-menu2 .main-menu ul li a:hover svg {
   fill: var(--primary-color);
 }
-.header-menu .social-media ul {
+.header-menu2 .social-media ul {
   display: flex;
   gap: 18px;
   align-items: center;
 }
-.header-menu .social-media ul li a {
+.header-menu2 .social-media ul li a {
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -549,10 +549,10 @@ ul {
   color: var(--white-color);
   transition: 0.5s;
 }
-.header-menu .social-media ul li a svg {
+.header-menu2 .social-media ul li a svg {
   fill: var(--text-color);
 }
-.header-menu .social-media ul li a:hover {
+.header-menu2 .social-media ul li a:hover {
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -560,10 +560,10 @@ ul {
 /*================================================
   04. Banner  area
   =================================================*/
-.banner-area {
+.banner-area2 {
   border-bottom: 1px solid #E1E1E1;
 }
-.banner-area .slider-btn-groups .slider-btn {
+.banner-area2 .slider-btn-groups .slider-btn {
   height: 90px;
   width: 90px;
   border-radius: 50%;
@@ -580,7 +580,7 @@ ul {
   z-index: 99;
   gap: 5px;
 }
-.banner-area .slider-btn-groups .slider-btn span {
+.banner-area2 .slider-btn-groups .slider-btn span {
   font-family: var(--font-red-rose);
   font-size: 15px;
   font-weight: 700;
@@ -589,39 +589,39 @@ ul {
   text-align: center;
   color: var(--text-color);
 }
-.banner-area .slider-btn-groups .slider-btn span.two {
+.banner-area2 .slider-btn-groups .slider-btn span.two {
   color: #C4C4C4;
 }
 @media (max-width: 1399px) {
-  .banner-area .slider-btn-groups .slider-btn {
+  .banner-area2 .slider-btn-groups .slider-btn {
     left: -10px;
     top: 250px;
   }
 }
 @media (max-width: 1399px) {
-  .banner-area .slider-btn-groups .slider-btn {
+  .banner-area2 .slider-btn-groups .slider-btn {
     display: none;
     visibility: hidden;
   }
 }
-.banner-area .slider-btn-groups .slider-btn.next-2 {
+.banner-area2 .slider-btn-groups .slider-btn.next-2 {
   right: -150px;
   left: unset;
 }
-.banner-area .slider-btn-groups .slider-btn svg {
+.banner-area2 .slider-btn-groups .slider-btn svg {
   fill: var(--text-color);
   transition: 0.35s;
 }
-.banner-area .slider-btn-groups .slider-btn:hover {
+.banner-area2 .slider-btn-groups .slider-btn:hover {
   border: 1px solid #78EB54;
 }
-.banner-area .slider-btn-groups .slider-btn:hover svg {
+.banner-area2 .slider-btn-groups .slider-btn:hover svg {
   fill: var(--text-color);
 }
-.banner-area .banner-card {
+.banner-area2 .banner-card {
   position: relative;
 }
-.banner-area .banner-card .banner-img {
+.banner-area2 .banner-card .banner-img {
   position: absolute;
   width: 100%;
   background-image: url(../image/Image\ \(25\).png);
@@ -629,41 +629,41 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner-area .banner-card .banner-img.two {
+.banner-area2 .banner-card .banner-img.two {
   background-image: url(../image/Image\ \(26\).png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
-.banner-area .banner-card .banner-img.three {
+.banner-area2 .banner-card .banner-img.three {
   background-image: url(../image/Image\ \(27\).png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
-.banner-area .banner-card .banner-content {
+.banner-area2 .banner-card .banner-content {
   position: relative;
   z-index: 1;
   padding: 40px 0 23px 30px;
 }
 @media (max-width: 1199px) {
-  .banner-area .banner-card .banner-content {
+  .banner-area2 .banner-card .banner-content {
     padding: 40px 0 20px 30px;
   }
 }
 @media (max-width: 767px) {
-  .banner-area .banner-card .banner-content {
+  .banner-area2 .banner-card .banner-content {
     padding: 40px 0 0px 30px;
   }
 }
 @media (max-width: 576px) {
-  .banner-area .banner-card .banner-content {
+  .banner-area2 .banner-card .banner-content {
     padding: 40px 0 40px 30px;
   }
 }
-.banner-area .banner-card .banner-content .top-btn a {
+.banner-area2 .banner-card .banner-content .top-btn a {
   font-family: var(--font-red-rose);
   font-size: 14px;
   font-weight: 700;
@@ -675,37 +675,37 @@ ul {
   padding: 8px 20px;
   border-radius: 100px;
 }
-.banner-area .banner-card .banner-content .banner-content-bottom {
+.banner-area2 .banner-card .banner-content .banner-content-bottom {
   padding-top: 315px;
   margin-bottom: 20px;
 }
 @media (max-width: 1399px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom {
     padding-top: 238px;
   }
 }
 @media (max-width: 1199px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom {
     padding-top: 170px;
   }
 }
 @media (max-width: 767px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom {
     padding-top: 90px;
   }
 }
 @media (max-width: 576px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom {
     padding-top: 180px;
   }
 }
-.banner-area .banner-card .banner-content .banner-content-bottom .author-area {
+.banner-area2 .banner-card .banner-content .banner-content-bottom .author-area {
   display: flex;
   gap: 10px;
   align-items: center;
   margin-bottom: 20px;
 }
-.banner-area .banner-card .banner-content .banner-content-bottom .author-area .author-name a {
+.banner-area2 .banner-card .banner-content .banner-content-bottom .author-area .author-name a {
   font-family: var(--font-red-rose);
   font-size: 16px;
   font-weight: 700;
@@ -714,7 +714,7 @@ ul {
   text-align: left;
   color: var(--white-color);
 }
-.banner-area .banner-card .banner-content .banner-content-bottom .author-area .publish-date a {
+.banner-area2 .banner-card .banner-content .banner-content-bottom .author-area .publish-date a {
   font-family: "Figtree", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -727,16 +727,16 @@ ul {
   gap: 10px;
 }
 @media (max-width: 767px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom .author-area {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom .author-area {
     display: block;
   }
 }
 @media (max-width: 576px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom .author-area {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom .author-area {
     display: flex;
   }
 }
-.banner-area .banner-card .banner-content .banner-content-bottom h2 {
+.banner-area2 .banner-card .banner-content .banner-content-bottom h2 {
   font-family: var(--font-red-rose);
   font-size: 30px;
   font-weight: 700;
@@ -747,23 +747,23 @@ ul {
   max-width: 380px;
 }
 @media (max-width: 1399px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom h2 {
     font-size: 25px;
   }
 }
 @media (max-width: 1199px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom h2 {
     font-size: 20px;
     line-height: 30px;
   }
 }
 @media (max-width: 767px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom h2 {
     font-size: 18px;
   }
 }
 @media (max-width: 576px) {
-  .banner-area .banner-card .banner-content .banner-content-bottom h2 {
+  .banner-area2 .banner-card .banner-content .banner-content-bottom h2 {
     font-size: 30px;
   }
 }
@@ -860,24 +860,24 @@ ul {
 /*================================================
   04. Blog post  area
   =================================================*/
-.blog-post .blog-card .blog-card-img-wrap {
+.blog-post2 .blog-card .blog-card-img-wrap {
   position: relative;
 }
-.blog-post .blog-card .blog-card-img-wrap a {
+.blog-post2 .blog-card .blog-card-img-wrap a {
   overflow: hidden;
   display: block;
   transition: all 0.5s ease-out;
 }
-.blog-post .blog-card .blog-card-img-wrap a img {
+.blog-post2 .blog-card .blog-card-img-wrap a img {
   border-radius: 5px 5px 0 0;
   transition: all 0.5s ease-out;
 }
 @media (max-width: 991px) {
-  .blog-post .blog-card .blog-card-img-wrap a img {
+  .blog-post2 .blog-card .blog-card-img-wrap a img {
     width: 100%;
   }
 }
-.blog-post .blog-card .blog-card-img-wrap a::after {
+.blog-post2 .blog-card .blog-card-img-wrap a::after {
   position: absolute;
   width: 200%;
   height: 0%;
@@ -888,7 +888,7 @@ ul {
   content: "";
   z-index: 1;
 }
-.blog-post .blog-card .blog-card-img-wrap a span {
+.blog-post2 .blog-card .blog-card-img-wrap a span {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -905,15 +905,15 @@ ul {
   border-radius: 100px;
   z-index: 9;
 }
-.blog-post .blog-card .blog-content {
+.blog-post2 .blog-card .blog-content {
   padding-top: 20px;
 }
-.blog-post .blog-card .blog-content .author-area {
+.blog-post2 .blog-card .blog-content .author-area {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.blog-post .blog-card .blog-content .author-area .author-name a {
+.blog-post2 .blog-card .blog-content .author-area .author-name a {
   font-family: var(--font-red-rose);
   font-size: 16px;
   font-weight: 700;
@@ -922,7 +922,7 @@ ul {
   text-align: left;
   color: var(--text-color);
 }
-.blog-post .blog-card .blog-content .author-area .publish-date a {
+.blog-post2 .blog-card .blog-content .author-area .publish-date a {
   font-family: "Figtree", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -934,7 +934,7 @@ ul {
   gap: 10px;
   align-items: center;
 }
-.blog-post .blog-card .blog-content h3 {
+.blog-post2 .blog-card .blog-content h3 {
   font-family: var(--font-red-rose);
   font-size: 22px;
   font-weight: 700;
@@ -944,12 +944,12 @@ ul {
   color: var(--text-color);
   padding-top: 10px;
 }
-.blog-post .view-all-btn {
+.blog-post2 .view-all-btn {
   text-align: center;
   display: flex;
   justify-content: center;
 }
-.blog-post .view-all-btn a {
+.blog-post2 .view-all-btn a {
   font-family: var(--font-red-rose);
   align-items: center;
   font-size: 15px;
@@ -965,29 +965,29 @@ ul {
   padding: 8px 28px;
   transition: 0.35s;
 }
-.blog-post .view-all-btn a svg path {
+.blog-post2 .view-all-btn a svg path {
   stroke: var(--text-color);
 }
-.blog-post .view-all-btn a .arrow {
+.blog-post2 .view-all-btn a .arrow {
   transform: rotate(0);
   transition: 0.5s;
 }
-.blog-post .view-all-btn a:hover {
+.blog-post2 .view-all-btn a:hover {
   color: var(--text-color);
   background-color: var(--primary-color);
 }
-.blog-post .view-all-btn a:hover svg path {
+.blog-post2 .view-all-btn a:hover svg path {
   stroke: var(--text-color);
 }
-.blog-post .view-all-btn a:hover .arrow {
+.blog-post2 .view-all-btn a:hover .arrow {
   transform: rotate(45deg);
 }
-.blog-post .sidebar-area .single-widget {
+.blog-post2 .sidebar-area .single-widget {
   background-color: #F8F8F8;
   border-radius: 10px;
   padding: 40px 20px 40px 40px;
 }
-.blog-post .sidebar-area .single-widget h2 a {
+.blog-post2 .sidebar-area .single-widget h2 a {
   font-family: var(--font-poller-one);
   font-size: 30px;
   font-weight: 400;
@@ -996,7 +996,7 @@ ul {
   text-align: center;
   color: var(--text-color);
 }
-.blog-post .sidebar-area .single-widget p {
+.blog-post2 .sidebar-area .single-widget p {
   font-family: "Figtree", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1007,38 +1007,38 @@ ul {
   border-top: 1px solid #EBEBEB;
   padding-top: 10px;
 }
-.blog-post .sidebar-area .single-widget .counter-up-area {
+.blog-post2 .sidebar-area .single-widget .counter-up-area {
   background-color: #FFFFFF;
   padding: 10px;
   border-radius: 28px;
   border: 1px solid #EEEEEE;
 }
-.blog-post .sidebar-area .single-widget .counter-up-area ul {
+.blog-post2 .sidebar-area .single-widget .counter-up-area ul {
   display: flex;
   gap: 50px;
 }
-.blog-post .sidebar-area .single-widget .counter-up-area ul li a {
+.blog-post2 .sidebar-area .single-widget .counter-up-area ul li a {
   display: flex;
   gap: 10px;
   margin-bottom: 0;
   text-align: center;
   align-items: center;
 }
-.blog-post .sidebar-area .single-widget .counter-up-area ul li a .icon {
+.blog-post2 .sidebar-area .single-widget .counter-up-area ul li a .icon {
   width: 26px;
   height: 26px;
   border-radius: 50px;
   border: 1px solid #545454;
   text-align: center;
 }
-.blog-post .sidebar-area .single-widget .counter-up-area ul li a .icon svg {
+.blog-post2 .sidebar-area .single-widget .counter-up-area ul li a .icon svg {
   margin-top: -2px;
 }
-.blog-post .sidebar-area .single-widget .counter-up-area ul li a .number {
+.blog-post2 .sidebar-area .single-widget .counter-up-area ul li a .number {
   display: flex;
   margin-top: 6px;
 }
-.blog-post .sidebar-area .single-widget .counter-up-area ul li a .number h5 {
+.blog-post2 .sidebar-area .single-widget .counter-up-area ul li a .number h5 {
   font-family: var(--font-red-rose);
   font-size: 16px;
   font-weight: 700;
@@ -1047,7 +1047,7 @@ ul {
   text-align: left;
   color: var(--text-color2);
 }
-.blog-post .sidebar-area .single-widget .counter-up-area ul li a .number span {
+.blog-post2 .sidebar-area .single-widget .counter-up-area ul li a .number span {
   font-family: var(--font-red-rose);
   font-size: 16px;
   font-weight: 700;

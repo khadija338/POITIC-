@@ -5,7 +5,7 @@
 		time: 1000
 	});
 
-var swiper = new Swiper(".banner-slider", {
+var swiper = new Swiper(".banner-slider2", {
 	slidesPerView: 1,
 	speed: 1500,
 	spaceBetween: 30,
