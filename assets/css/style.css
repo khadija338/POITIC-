@@ -2342,6 +2342,83 @@ footer .footer-btm .right-area p span:hover {
 .blog-post2 .view-all-btn a:hover .arrow {
   transform: rotate(45deg);
 }
+.blog-post2 .contect-section {
+  background-color: #EDE6FF;
+  border-radius: 10px;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.blog-post2 .contect-section h2 {
+  font-family: var(--font-red-rose);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.blog-post2 .contect-section .input-area {
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+  background: var(--white-color);
+  height: 56px;
+  width: 472px;
+  min-width: 300px;
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .blog-post2 .contect-section .input-area {
+    min-width: 300px;
+  }
+}
+.blog-post2 .contect-section .input-area input {
+  background: var(--white-color);
+  width: 100%;
+  color: rgb(84, 84, 84);
+  font-family: var(--font-red-rose);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.blog-post2 .contect-section .input-area input::-moz-placeholder {
+  color: var(--text-color);
+}
+.blog-post2 .contect-section .input-area input::placeholder {
+  color: var(--text-color);
+}
+.blog-post2 .contect-section .input-area button {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+}
+.blog-post2 .contect-section .input-area button svg {
+  transition: 0.35s;
+  fill: var(--button-color);
+}
+.blog-post2 .contect-section .input-area button:hover {
+  background-color: var(--button-color);
+  border: none;
+}
+.blog-post2 .contect-section .input-area button:hover svg {
+  fill: var(--text-color);
+}
 .blog-post2 .sidebar-area .single-widget {
   background-color: #F8F8F8;
   border-radius: 10px;
@@ -2353,6 +2430,10 @@ footer .footer-btm .right-area p span:hover {
 .blog-post2 .sidebar-area .single-widget.three {
   background-color: var(--white-color);
   border: 1px solid #EEEEEE;
+}
+.blog-post2 .sidebar-area .single-widget.four {
+  background-color: var(--white-color);
+  padding: 0px;
 }
 .blog-post2 .sidebar-area .single-widget h2 a {
   font-family: var(--font-poller-one);
